@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vince Budai - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    
+    .header-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 10px;
+    }
+
+    .avatar,
+    .company {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .sub {
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .typing {
+      font-size: 16px;
+      color: #000;
+      height: 24px;
+    }
+
+    
+    .personal {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #000;
+      line-height: 1.5;
+    }
+
+    
+    .links {
+      margin-top: 12px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid #000;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #000;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .links a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+      background: #fafafa;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      margin: 6px 0 0 18px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 6px;
+    }
+
+    .label {
+      color: #666;
+    }
+
+    footer {
+      padding: 20px 0;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media(max-width:600px) {
+      .kv {
+        grid-template-columns: 1fr;
+      }
+      .header-flex {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      
+      <div class="header-flex">
+  <img 
+    src="profil.jpg" 
+    alt="Profilbild" 
+    class="avatar">
+
+  <img 
+    src="swisscom.png" 
+    alt="Swisscom" 
+    class="company">
+</div>
+
+
+      <h1>Vince Budai</h1>
+      <div class="sub">Lernender Informatiker Plattformentwickler EFZ · Zürich</div>
+      <div class="typing">
+        <span id="typed"></span><span id="cursor">|</span>
+      </div>
+
+      
+      <div class="personal">
+        <div>📧 vince.budai@swisscom.com</div>
+        <div>📱 +41 79 398 24 39</div>
+        <div>🏠 Zürich</div>
+      </div>
+
+      
+      <div class="links">
+        <a href="https://github.com/Fradi149" target="_blank">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/dein-profil" target="_blank">🔗 LinkedIn</a>
+        <a href="https://intranet.example.com" target="_blank">🌐 Intranet</a>
+        <a href="Lebenslauf-Vince.pdf" download>📄 Lebenslauf</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Über mich</h2>
+      <p>Ich bin 15 Jahre alt und interessiere mich für moderne IT. 
+      Besonders spannend finde ich Linux, Automatisierung und Monitoring. 
+      Ich lerne gerne durch praktische Projekte und setze Dinge klar und verständlich um.</p>
+    </section>
+
+    <section>
+      <h2>Projekte</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="meta">Seit Aug 2025 · aktiv</div>
+          <h3>Data Analytics (ELK + Linux)</h3>
+          <ul>
+            <li>Linux-Basics vertieft</li>
+            <li>Filebeat & Logstash eingerichtet</li>
+            <li>Visualisierung in Kibana</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="meta">Juni 2025 · abgeschlossen</div>
+          <h3>Interaktive Europakarte (Schulprojekt)</h3>
+          <ul>
+            <li>Planung und Programmierung</li>
+            <li>Tests und Präsentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fähigkeiten</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Programmiersprachen</strong>
+          <div class="kv">
+            <div class="label">Sprachen</div><div> JavaScript, HTML/CSS</div>
+            <div class="label">Tools</div><div>Git, VS Code</div>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Plattform & Monitoring</strong>
+          <div class="kv">
+            <div class="label">Linux</div><div>WSL/Ubuntu</div>
+            <div class="label">ELK-Stack</div><div>Filebeat, Logstash, Elasticsearch</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ausbildung</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Informatiker Plattformetnwickler EFZ</strong>
+          <div class="meta">2025–2029 · TBZ / BMS</div>
+        </div>
+        <div class="card">
+          <strong>Sekundarschule Niveau A</strong>
+          <div class="meta">2022–2025</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sprachen</h2>
+      <div class="card">
+        <div class="kv">
+          <div class="label">Deutsch</div><div>Muttersprache</div>
+          <div class="label">Ungarisch</div><div>Muttersprache</div>
+          <div class="label">Englisch</div><div>Fliessend</div>
+          <div class="label">Französisch</div><div>Grundkenntnisse</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Vince Budai 
+    </footer>
+  </div>
+
+  <script>
+    const text = "Bereit für neue Herausforderungen";
+    let i = 0;
+    let deleting = false;
+    const speed = 100;
+    const pause = 1500;
+
+    function typeWriter() {
+      const el = document.getElementById("typed");
+
+      if (!deleting) {
+        el.textContent = text.substring(0, i++);
+        if (i > text.length) {
+          deleting = true;
+          setTimeout(typeWriter, pause);
+          return;
+        }
+      } else {
+        el.textContent = text.substring(0, i--);
+        if (i < 0) {
+          deleting = false;
+          i = 0;
+        }
+      }
+      setTimeout(typeWriter, deleting ? 50 : speed);
+    }
+
+    typeWriter();
+
+    // blinkender Cursor
+    setInterval(() => {
+      const c = document.getElementById("cursor");
+      c.style.visibility = c.style.visibility === "hidden" ? "visible" : "hidden";
+    }, 500);
+  </script>
+</body>
+</html>
